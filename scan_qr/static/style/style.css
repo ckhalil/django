@@ -1,0 +1,58 @@
+
+@charset "utf-8";
+/* CSS Document */
+div#clock{
+    position:relative;
+width:200px;
+height:200px;
+ background-image: url( '/static/images/clock.png' ) ;
+ background-size: 120px 120px;
+ background-repeat: no-repeat;
+
+margin:auto;
+}
+img#neddlehours{
+ position:absolute;
+ left:55px;
+ top:15px;
+ height:35px;
+ transform-origin:50% 55px;
+
+	
+}
+img#needleminutes{
+ position:absolute;
+ left:55px;
+ top:0px;
+ height:65px;
+ transform-origin:50% 55px;
+
+
+	
+}
+img#neddleseconds{
+ position:absolute;
+ left:55px;
+ top:0px;
+ height:80px;
+  transform-origin:50% 55px;
+	
+}
+img#center{
+ position:absolute;
+ left:45px;
+ top:40px;
+ width:30px;
+ height:30px;
+
+	
+}
+p#digital{
+	position:absolute;
+	top:140px;
+	left:7%;
+	color:#003;
+}
+body{
+ background-color: #5b80b2;
+}

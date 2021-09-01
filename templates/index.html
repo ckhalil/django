@@ -1,0 +1,443 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Your description">
+    <meta name="author" content="Your name">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+	<meta property="og:site_name" content="" /> <!-- website name -->
+	<meta property="og:site" content="" /> <!-- website link -->
+	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+	<meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
+
+    <!-- Webpage Title -->
+    <title>Nubis Webpage Title</title>
+    
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+	  <link rel="stylesheet" href="{% static 'style/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'style/css/fontawesome-all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'style/css/swiper.css' %}">
+    <link rel="stylesheet" href="{% static 'style/css/styles.css' %}">
+
+	<!-- Favicon  -->
+    <link rel="icon" href="{% static 'images/images/f.png' %}">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbarExample">
+    
+    <!-- Navigation -->
+    <nav id="navbarExample" class="navbar navbar-expand-lg fixed-top navbar-light" aria-label="Main navigation">
+        <div class="container">
+
+            <!-- Image Logo -->
+            <a class="navbar-brand logo-image" href="index.html"><img src="{% static 'images/images/f.png' %}" alt="alternative"></a>
+
+            <!-- Text Logo - Use this if you don't have a graphic logo -->
+            <!-- <a class="navbar-brand logo-text" href="index.html">Nubis</a> -->
+
+            <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav ms-auto navbar-nav-scroll">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#header">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#details">Details</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Drop</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                            <li><a class="dropdown-item" href="article.html">Article Details</a></li>
+                            <li><div class="dropdown-divider"></div></li>
+                            <li><a class="dropdown-item" href="terms.html">Terms Conditions</a></li>
+                            <li><div class="dropdown-divider"></div></li>
+                            <li><a class="dropdown-item" href="privacy.html">Privacy Policy</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <span class="nav-item">
+                    <a class="btn-solid-sm" href="page1">Entrer</a>
+                </span>
+            </div> <!-- end of navbar-collapse -->
+        </div> <!-- end of container -->
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+
+      
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-xl-5">
+                    <div class="text-container">
+                        <h3 class="h3-large">Bienvenue</h3>
+                        <h1 class="h1-large">Ecole l'AMRANI</h1>
+                        <h2 class="h2-large">maternelle et primaire</h2>
+
+                        <a class="btn-solid-lg" href="#details">à propos</a>
+
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6 col-xl-7">
+                    <div class="image-container">
+                        <img class="img-fluid" src="{%static 'images/images/i.png' %}" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </header> <!-- end of header -->
+    <!-- end of header -->
+
+
+    <!-- Services -->
+    <div id="services" class="cards-1 bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Découvrez nos services </h2>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-icon">
+                            <span class="fas fa-school"></span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Scolarité</h5>
+                            <p> Un établissement d’enseignement privé homologué par le Ministère de l’éducation nationale et de la formation professionnelle Marocain.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-icon red">
+                            <span  class="fas fa-book-reader"></span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Bibliothèque</h5>
+                            <p>L’école met à disposition de ses élèves une bibliothèque bien fournie en ouvrages de toutes sortes.</p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-icon green">
+                            <span class="fas fa-bus"></span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Transport scolaire</h5>
+                            <p>L’établissement AL HAMAMA AL BAIDAE dispose de son propre service de transport scolaire. Le service est proposé à Tétouan et régions.</p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of cards-1 -->
+    <!-- end of services -->
+
+
+    <!-- Details 1 -->
+    <div id="details" class="basic-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-xl-7">
+                    <div class="image-container">
+                        <img class="img-fluid" src="{%static 'images/images/details-1.png'%}" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6 col-xl-5">
+                    <div class="text-container">
+
+                        <h2>Pourquoi nous choisir ?</h2>
+                        <p> Marocaine et citoyenne, notre école met en avant un ensemble de valeurs nationales ayant pour objectif d’enraciner la culture marocaine, développer le civisme chez les élèves et les préparer à devenir des citoyens actifs, qui ont un fort sentiment d’appartenance au pays.</p>
+
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-1 -->
+    <!-- end of details 1 -->
+
+
+    <!-- Details 2 -->
+    <div class="basic-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-xl-5 btn btn-light">
+                    <div class="text-container ">
+                        <div class="section-title">à propos</div>
+                        <h2>Préscolaire–Primaire–Collège</h2>
+
+                        <p>L’établissement AL AMRANI est une école maternelle, primaire et collège privée à Tétouan offrant une formation de grande qualité. Nous garantissons un milieu de vie chaleureux et sécurisant où l’on respecte votre enfant et son rythme d’apprentissage.</p>
+                        <a class="btn-outline-reg" href="article.html">Details</a>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6 col-xl-7">
+                    <div class="image-container">
+                        <img class="img-fluid" src="{%static 'images/images/a-propos.jpg'%}" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-2 -->
+    <!-- end of details 2 -->
+
+
+
+
+    <!-- Testimonials -->
+    <div class="cards-2 bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="h2-heading">Mode de travaille</h2>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <!-- Card -->
+                    <div class="card">
+                        <img class="quotes" src="{%static 'images/images/quotes.svg'%}" alt="alternative">
+                        <div class="card-body">
+                            <div class="testimonial-author">pédagogies alternatives</div>
+                            <p class="testimonial-text">Nous favorisons les pédagogies alternatives qui permettent à l'enfant d'être
+                                acteur de ses apprentissages , son implication lui permet de développer ses compétences de manière enthousiaste et productive.</p>
+
+
+                        </div>
+                        <div class="gradient-floor red-to-blue"></div>
+                    </div>
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card">
+                        <img class="quotes" src="{%static 'images/images/quotes.svg'%}" alt="alternative">
+                        <div class="card-body">
+
+                             <div class="testimonial-author">accompagnement individualisé</div>
+                            <p class="testimonial-text">Chaque enfant étant différent, nous tenons compte de l'individualité de chaque élève afin de mettre en place
+                                les différenciations nécessaires.<br><br></p>
+
+
+                        </div>
+                        <div class="gradient-floor blue-to-purple"></div>
+                    </div>
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card">
+                        <img class="quotes" src="{%static 'images/images/quotes.svg'%}" alt="alternative">
+                        <div class="card-body">
+
+                             <div class="testimonial-author">Discipline</div>
+                            <p class="testimonial-text">Dès son plus jeune âge l'enfant a besoin de limites qui seront ses repères durant son développement. Apprendre à respecter les règles de groupes, à organiser son travail, à relever des défis. Nous l'accompagnons dans cette voie.</p>
+
+
+                        </div>
+                        <div class="gradient-floor purple-to-green"></div>
+                    </div>
+                    <!-- end of card -->
+                    
+                    <!-- Card -->
+                    <div class="card">
+                        <img class="quotes" src="{%static 'images/images/quotes.svg'%}" alt="alternative">
+                        <div class="card-body">
+
+                             <div class="testimonial-author">pédagogie positive</div>
+                            <p class="testimonial-text">L'encouragement est également à la base de notre projet pédagogique, la pédagogie positive permet de faire jaillir le potentiel de l’enfants qui parfois lui-même n'en a pas conscience.</p>
+
+                        </div>
+                        <div class="gradient-floor red-to-blue"></div>
+                    </div>
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card">
+                        <img class="quotes" src="{%static 'images/images/quotes.svg'%}" alt="alternative">
+                        <div class="card-body">
+                            <div class="testimonial-author">enseignement des langues</div>
+                            <p class="testimonial-text">l'enseignement des langues est une priorité pour nous. Dès la maternelle, nos élèves baignent dans une ambiance bilingue (arabe/français) et sont initiés dès la grande section à l'anglais.</p>
+
+
+                        </div>
+                        <div class="gradient-floor blue-to-purple"></div>
+                    </div>
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card">
+                        <img class="quotes" src="{%static 'images/images/quotes.svg'%}" alt="alternative">
+                        <div class="card-body">
+                            <div class="testimonial-author">Bienveillance</div>
+                            <p class="testimonial-text">C'est en ayant un contact bienveillant avec nos élèves qui nous arrivons à leur inculquer des valeurs essentielles à leur avenir.<br><br></p>
+
+
+                        </div>
+                        <div class="gradient-floor purple-to-green"></div>
+                    </div>
+                    <!-- end of card -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of cards-2 -->
+    <!-- end of testimonials -->
+
+
+    <!-- Customers -->
+    <div class="slider-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h4>Plus de    <span class="blue">5000</span> clients font confiance</h4>
+                    <hr class="section-divider">
+
+                    <!-- Image Slider -->
+                    <div class="slider-container">
+                        <div class="swiper-container image-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="{%static 'images/images/qr.jpg'%}" alt="alternative">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="{%static 'images/images/traking.jpg'%}" alt="alternative">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="{%static 'images/images/gps.jpg'%}" alt="alternative">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="{%static 'images/images/exam.jpg'%}" alt="alternative">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="{%static 'images/images/conseil.jpg'%}" alt="alternative">
+                                </div>
+
+                            </div> <!-- end of swiper-wrapper -->
+                        </div> <!-- end of swiper container -->
+                    </div> <!-- end of slider-container -->
+                    <!-- end of image slider -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of slider-1 -->
+    <!-- end of customers -->
+
+
+
+
+    <!-- Contact -->
+
+    <!-- end of contact -->
+
+
+    <!-- Footer -->
+    <div class="footer bg-gray">
+        <img class="decoration-circles" src="{%static 'images/images/decoration-circles.png'%}" alt="alternative">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h4>Si vous voulez trouver plus de nouvelles informations</h4>
+                                 <h4>suivez-nous </h4>
+                    <div class="social-container">
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-facebook-f fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-pinterest-p fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-instagram fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-youtube fa-stack-1x"></i>
+                            </a>
+                        </span>
+                    </div> <!-- end of social-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->  
+    <!-- end of footer -->
+
+
+    <!-- Copyright -->
+    <div class="copyright bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <ul class="list-unstyled li-space-lg p-small">
+                        <li><a href="article.html">Article Details</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div> <!-- end of col -->
+                <div class="col-lg-3 col-md-12 col-sm-12">
+                    <p class="p-small statement">Copyright © <a href="#">Group Qrscan</a></p>
+                </div> <!-- end of col -->
+
+                <div class="col-lg-3 col-md-12 col-sm-12">
+                    <p class="p-small statement">Distributed by <a href="https://themewagon.com/" target="_blank">Themewagon</a></p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright --> 
+    <!-- end of copyright -->
+    
+
+    <!-- Back To Top Button -->
+    <button onclick="topFunction()" id="myBtn">
+        <img src="{% static 'images/images/up-arrow.png' %}"  alt="alternative">
+    </button>
+    <!-- end of back to top button -->
+    	
+    <!-- Scripts -->
+    <script src="{% static 'style/js/bootstrap.min.js' %}" type="text/javascript"></script><!-- Bootstrap framework -->
+    <script src="{% static 'style/js/swiper.min.js' %}" type="text/javascript"></script><!-- Swiper for image and text sliders -->
+    <script src="{% static 'style/js/scripts.js' %}" type="text/javascript"></script><!-- Custom scripts -->
+
+</body>
+</html>
